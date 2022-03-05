@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
+
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <style>
+            .smaler-image {width: 150px}
+            .largerr-image {width: 500px}
+             <!--aumentam e diminuem o tamanho das figuras-->
+             .thick-green-border {border-colot:green; border-width: 5px; border-style: solid} 
+           .red-text {color:red;}
+            p {font-size: 16px; font-family: Helvetica; monospace;}
+           .purple-text {color:purple;}  
+           h2   {font-family: Lobster, monospace} 
+        </style>
+        <h2 class="red-text">CatPhotoApp</h2>
+        <main>
+            <h3 class="purple-text">Cat Photos</h3>
+            <!--To Do:add link to cat photos-->
+            <p class="red-text">Click here to see more  <a href="#" target="_blank">cat photos</a></p>
+           <!--p=paragrafh a=anchor-->
+            <a href="#"> <img src="gato.jpg.jpg" alt="A cute orange cat lying on its back"></a>
+            <h3>Cat Lists</h3>
+            <div class="lists">
+                <p>Things cats <em>love</em>:</p>
+                <!--ul=lista desordenada-->
+                <ul>    
+                    <li>Cat nip</li>
+                    <li>Laser Pointers</li>
+                    <li>Lasagna</li>
+                </ul>
+                <img src="lasanha.jpg" alt="lasagna">
+                <p>Things cats <strong>hate</strong>:</p>
+                <ol>
+                    <li>Flea threatment</li>
+                    <li>thunder</li>
+                    <li>Other cats</li>
+                </ol>
+            </div>
+            <img src="bengala.jpg.jpg" alt: a bengal gat>
+            <form action="/submit-cat-photo">
+            <label for="Indoor"><input id="Indoor" type="radio" name="Indoor-Outdoor" checked> Indoor</label><br>
+            <label for="Outdoor"> <input id="Outdoor" type="radio" name="Indoor-Outdoor"> Outdoor </label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="personality" checked> Loving </label><br>
+            <label for="loving"><input id="lazy" type="checkbox" name="personality"> Lazy </label><br>
+            <label for="loving"><input id="energetic" type="checkbox" name="personality"> Energetic </label><br>
+            <input type="text" placeholder="cat photo URL" required><br>
+            <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p><small>No Copyright - <a href="https://freecodecamp.org">freeCodeCamp.org</small></p>
+        </footer>
+    </body>
+</html>
